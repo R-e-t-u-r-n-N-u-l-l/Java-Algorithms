@@ -21,10 +21,6 @@ public class BruteForce {
 	}
 	
 	public static void main(String[] args) {
-		System.err.println("password found: " + "~~~~~~~~~~" + "(10 characters)");
-		System.err.println("It took: " + ("2935262757" + " day(s), " + 16 + "h, " + 53 + "min, " + 45 + "s and " + 0 + "ms"));
-		System.exit(0);
-		
 		start = System.currentTimeMillis();
 		while(true) {
 			string.append((char) min);
@@ -51,11 +47,11 @@ public class BruteForce {
 		     days = (int) (input / day);
 		     millis = (int) (input % day);
 		} else 
-			millis= (int) input;
+			millis = (int) input;
 			           
 		if(millis >= hour) {
 		     hours = millis / hour;
-		     millis= millis% hour;
+		     millis = millis% hour;
 		}
 			       
 		if(millis >= minute) {
